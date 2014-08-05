@@ -1,0 +1,92 @@
+@()
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Play - BrowserSync</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+    <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+  </head>
+  <body>
+    <h1>Play - BrowserSync</h1>
+    <h2>Setup</h2>
+    <ol>
+      <li>Open 2 shells at the root of the project</li>
+      <li>Run <strong>npm install</strong> once in one of them to grap some dependencies</li>
+      <li>Run <strong>sbt ~run</strong> in the first one, wait for it to finish. Play server should be running now.</li>
+      <li>Run <strong>gulp</strong> in the other one. Now BrowserSync has a proxy on top of Play server.</li>
+      <li>Go to <a href="http://localhost:9001">http://localhost:9001</a> to see the result.</li>
+    </ol>
+    <h2>Live reloading</h2>
+    <p>Here are the files you can edit to see live-reloading in action:</p>
+    <ul>
+      <li><strong>app/views/index.scala.html</strong> : a Scala template. Will only work if you are using "<strong>~run</strong>" to auto-compile</li>
+      <li><strong>public/javascript/main.js</strong> : a JavaScript file, will trigger a full reload of the page</li>
+      <li><strong>resources/less/main.less</strong> : a LESS file, watched by Gulp, that will be automatically compiled to "<strong>public/stylesheets/main.css</strong>" which is watched by BrowserSync and will be hot deployed (the page will be repainted with the new CSS without a full reload)</li>
+    </ul>
+    <h2>Multi devices sync</h2>
+    <p>Since it's BrowserSync, you can open this website on several browsers, including smartphones, and enjoy full sync accross clicks, scrolling, etc... Feel free to open <a href="http://localhost:9001">http://localhost:9001</a> to several browsers and interact with them.</p>
+    <button type="button" onclick="javascript:console.log('You just clicked me!')">Click me to log something in all opened consoles!</button>
+    <p>And now tons of content just to have some scrolling!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>Scroll me! Please please please!!</p>
+    <p>You did it! You are the best!! I ♥ you!</p>
+    <script src="@routes.Assets.at("javascripts/main.js")" type="text/javascript"></script>
+  </body>
+</html>
