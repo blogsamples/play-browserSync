@@ -2,6 +2,10 @@
 
 This project is a proof of concept to enable all the awesome features of [BrowserSync](http://www.browsersync.io/) in top of a [Play Framework](www.playframework.com) server. Also using [Gulp](http://gulpjs.com/) to demonstrate how to both compile and reload assets.
 
+## Blog post
+
+You can find my [blog post](http://pauldijou.fr/blog/2014/08/05/browser-sync-play-framework/) explaining quickly all about that project on my website.
+
 ## Setup
 
 This setup assumes you already have `sbt` and `NPM` installed on your machine.
@@ -9,7 +13,7 @@ This setup assumes you already have `sbt` and `NPM` installed on your machine.
 1. Go to the root of the project
 * Run `npm install` to grab some dependencies
 * Open 2 shells
-* Run `sbt ~run` in the first one and wait for it to finish. You should have a Play server running now.
+* Run `sbt run` in the first one and wait for it to finish. You should have a Play server running now.
 * Run `gulp` in the second one, this will start a BrowserSync proxy on top of the Play server (run `npm install -g gulp` if you don't have gulp yet).
 * Enjoy the result at [http://localhost:9001](http://localhost:9001)
 
@@ -17,7 +21,7 @@ This setup assumes you already have `sbt` and `NPM` installed on your machine.
 
 BrowserSync is configured to listen to the following files and live-reload them:
 
-* `app/views/index.scala.html` : a Scala template. Will only work if you are using ``~run` to auto-compile
+* `app/views/index.scala.html` : a Scala template, will trigger a full reload of the page, and so on a compilation of the template by Play
 * `public/javascript/main.js` : a JavaScript file, will trigger a full reload of the page
 * `resources/less/main.less` : a LESS file, watched by Gulp, that will be automatically compiled to  `public/stylesheets/main.css`, which is watched by BrowserSync and will be hot deployed (the page will be repainted with the new CSS without a full reload)
 
